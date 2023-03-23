@@ -73,7 +73,7 @@ typedef struct help
 } help;
 help global;
 
-/* stack utility functions available in linked_list.c */
+/* Utility functions available in linked_list.c */
 stack_t *add_node(stack_t **stack, const int n);
 stack_t *queue_node(stack_t **stack, const int n);
 void free_stack(stack_t *stack);
