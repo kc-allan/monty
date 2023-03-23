@@ -16,6 +16,24 @@ void push(stack_t **stack, int num)
 		fprintf(stderr, "L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
+<<<<<<< HEAD
 	num = atoi(arg);
 	add_node(stack, num);
+=======
+
+	if (global.data_struct == 1)
+	{
+		if (!add_node(stack, atoi(global.argument)))
+		{
+			exit(EXIT_FAILURE);
+		}
+	}
+	else
+	{
+		if (!queue_node(stack, atoi(global.argument)))
+		{
+			exit(EXIT_FAILURE);
+		}
+	}
+>>>>>>> d300fd7e7859c813166ad5f999516f3d5b12f89a
 }
