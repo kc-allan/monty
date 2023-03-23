@@ -1,6 +1,5 @@
 0x19. C - Stacks, Queues - LIFO, FIFO
 0. push, pall
-mandatory
 Implement the push and pall opcodes.
 
 The push opcode
@@ -21,7 +20,6 @@ Format: see example
 If the stack is empty, don’t print anything
 
 1. pint
-mandatory
 Implement the pint opcode.
 
 The pint opcode
