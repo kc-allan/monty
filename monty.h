@@ -3,6 +3,11 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <ctype.h>
 
 #define INSTRUCTIONS              \
 	{                           \
@@ -75,5 +80,10 @@ stack_t *add_node(stack_t **stack, const int n);
 stack_t *queue_node(stack_t **stack, const int n);
 void free_stack(stack_t *stack);
 size_t print_stack(const stack_t *stack);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+int is_valid_int(char *str)
 
-void push(stack_t **stack, unsigned int line_cnt);
+
+void push(stack_t **stack, unsigned int line_number);
+
+#endif /* MONTY_H */
