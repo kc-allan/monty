@@ -1,5 +1,4 @@
-#include "monty.h"
-#include <ctype.h>
+#include "./monty.h"
 
 /**
  * pchar - prints the int at the top of the stack as char

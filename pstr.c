@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "monty.h"
 
 /**
@@ -22,4 +20,3 @@ void pstr(stack_t **stack, unsigned int line_cnt __attribute__((unused)))
 	}
 	putchar('\n');
 }
-
